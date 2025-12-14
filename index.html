@@ -1,16 +1,10 @@
-<!doctype html>
-<html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/icons/favicon.ico" rel="icon" type="image/ico" />
-    <title>main window</title>
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <div id="modals-root"></div>
-    <div id="toasts-root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+fps-release/
+├─ server/
+│  └─ server.js   ← 登录 / 战绩 / 爆头 / 重生
+└─ client/
+   ├─ index.html  ← 登录界面 + UI
+   └─ game.js     ← 枪战 / 后坐力 / FPS
+cd fps-release/server
+npm install ws
+node server.js
+Release FPS ws://localhost:8200
